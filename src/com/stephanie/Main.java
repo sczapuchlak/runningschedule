@@ -14,10 +14,10 @@ public class Main {
         while(distance < TargetDistance){
            distance = distance*increment;
             weeksIn ++;
-            System.out.println("your run distance on week " + weeksIn+ " is "+
-            distance);
+            System.out.println("your run distance on week " + (String.format("%.0f", weeksIn)+ " is "+
+            (String.format("%.2f", distance))));
 
-
+            System.out.println("Thanks!");
         }
     }
 }
